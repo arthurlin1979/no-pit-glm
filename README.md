@@ -18,11 +18,13 @@ GLM-5.3-Flash 在 Mac Studio M3 Ultra 上跑得很快（prefill ~265 tok/s），
 
 ## 先從這裡讀
 
+- [專案簡介](INTRO.md)：這是什麼、為什麼需要、提供什麼。
+- [安裝指引](INSTALL.md)：從零開始安裝 GLM + oMLX + Jinja + Proxy + Caller。
 - [給 AI agents 的入口](AGENTS.md)：先讀本檔，再查 PITFALLS 與 catalogue 索引。
 - [30 秒 Quick Start](QUICKSTART.md)：人用三步確認、AI 用三頁開工。
 - [常見問題](TROUBLESHOOTING.md)：從 183 筆濃縮的先看入口，完整脈絡連回原編號。
 - [完整紀錄索引](catalogue/INDEX.md)：逐條保留主紀錄與維修／延伸項的原編號。
-- [ avoid pitfalls 速查表](PITFALLS.md)：快速查閱主題，只作入口，不取代完整紀錄。
+- [避坑速查表](PITFALLS.md)：快速查閱主題，只作入口，不取代完整紀錄。
 - [Jinja 變更區塊說明](BLOCKS.md)：本專案對 chat template 的所有修改，含實證狀態。
 - [來源與版本](SOURCES.md)：來源、版本、證據邊界與致謝。
 - [第三方聲明](THIRD_PARTY_NOTICES.md)：第三方內容的授權範圍。

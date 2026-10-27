@@ -18,6 +18,8 @@ Benchmark journey (114 questions): Ability 62/100 → 100/100 (theoretical, with
 
 ## Start here
 
+- [Introduction](INTRO.md)
+- [Installation guide](INSTALL.md)
 - [Entry for AI agents](AGENTS.md)
 - [30-second Quick Start](QUICKSTART.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
