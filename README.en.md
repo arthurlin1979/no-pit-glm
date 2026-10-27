@@ -72,6 +72,19 @@ OpenCode / harness / curl
 | Code | user contains `原始碼`/`code`/`python` and no tools | no fence + spec-fidelity |
 | Tool-result | tools present + tool result + user contains `json` | JSON-only + spec-fidelity |
 
+## Measured speed
+
+| Item | Value |
+|---|---|
+| 110-question generation speed (median) | 53.3 tok/s |
+| 110-question generation speed (average) | 52.1 tok/s |
+| 110-question TTFT (average) | 0.88s |
+| Speed 32K | TTFT 0.44s, prefill ~72K tok/s, decode 23.6 tok/s ✅ |
+| Speed 64K | TTFT 0.43s, prefill ~149K tok/s, decode 25.0 tok/s ✅ |
+| Speed 128K / 200K | not completed (prefill ~10–15 min, impractical) |
+
+Full data and honest caveats (KV cache hits, oMLX field recalculation) in [Measured speed](catalogue/speed.md).
+
 ## Journey overview
 
 | Stage | Ability | Code-test | Fix |

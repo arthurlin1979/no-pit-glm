@@ -72,6 +72,19 @@ OpenCode / harness / curl
 | Code | user 含 `原始碼`/`code`/`python` 且無 tools | 禁 fence + spec-fidelity |
 | Tool-result | tools present + 有 tool result + user 含 `json` | JSON-only + spec-fidelity |
 
+## 實測速度
+
+| 實測項 | 數值 |
+|---|---|
+| 110 題生成速度（中位數） | 53.3 tok/s |
+| 110 題生成速度（平均） | 52.1 tok/s |
+| 110 題 TTFT（平均） | 0.88s |
+| Speed 32K | TTFT 0.44s，prefill ~72K tok/s，decode 23.6 tok/s ✅ |
+| Speed 64K | TTFT 0.43s，prefill ~149K tok/s，decode 25.0 tok/s ✅ |
+| Speed 128K / 200K | 未完成（prefill ~10–15 min，不實際） |
+
+完整數據與誠實邊界（KV cache 命中、oMLX 欄位重算）見 [實測速度](catalogue/speed.md)。
+
 ## 全程改善總覽
 
 | 階段 | Ability | Code-test | 修復內容 |
