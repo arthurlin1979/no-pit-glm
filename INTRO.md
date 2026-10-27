@@ -6,7 +6,7 @@
 
 ## 為什麼需要
 
-GLM-5.3-Flash 在 Mac Studio M3 Ultra 上跑得很快（prefill ~265 tok/s），但格式遵循不穩定：量化模型常出現 JSON fence、trailing text、空回、裸陣列、程式碼截斷。只靠模型本身不夠，實務上需要：
+GLM-5.3-Flash 在 Mac Studio M3 Ultra 上速度不算慢（prefill ~253 tok/s），但格式遵循不穩定：量化模型常出現 JSON fence、trailing text、空回、裸陣列、程式碼截斷。只靠模型本身不夠，實務上需要：
 
 1. **Jinja 層**：輸出紀律（禁 fence、JSON 7 條、spec-fidelity、tool-result）。
 2. **Proxy 層**：JSON 提取 + 重試 + finish_reason 檢查。

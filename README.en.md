@@ -10,7 +10,7 @@ This project consolidates real format/leakage/truncation problems we hit, the fi
 
 ## Why this project
 
-GLM-5.3-Flash runs fast on Mac Studio M3 Ultra (prefill ~265 tok/s) but format-following is unstable: quantized models often emit JSON fences, trailing text, empty replies, bare arrays, truncated code. The model alone is not enough — you need Jinja-level output discipline, proxy-level JSON extraction + retry, and caller-level schema validation.
+GLM-5.3-Flash is no slouch on Mac Studio M3 Ultra (prefill ~253 tok/s) but format-following is unstable: quantized models often emit JSON fences, trailing text, empty replies, bare arrays, truncated code. The model alone is not enough — you need Jinja-level output discipline, proxy-level JSON extraction + retry, and caller-level schema validation.
 
 We organized every pitfall we hit into a queryable database. When something breaks, check: have we seen this before? Before starting work, read: what could affect this?
 

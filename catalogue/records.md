@@ -48,7 +48,7 @@
 | SPEED-03 | 128K | 未測 | prefill ~10 min，實測超時 |
 | SPEED-04 | 200K | 未測 | 需 hi≥12000，prefill ~15 min |
 
-GLM prefill 極快（0.4s for 32K-64K），但大 context（128K+）prefill 耗時過長。
+GLM prefill 不算慢（0.4s for 32K-64K），但大 context（128K+）prefill 耗時過長。
 
 ## 全程改善總覽
 

@@ -10,7 +10,7 @@
 
 ## 為什麼有這個專案
 
-GLM-5.3-Flash 在 Mac Studio M3 Ultra 上跑得很快（prefill ~265 tok/s），但格式遵循不穩定：量化模型常出現 JSON fence、trailing text、空回、裸陣列、程式碼截斷。只靠模型本身不夠，實務上需要 Jinja 層的輸出紀律、Proxy 層的 JSON 提取 + 重試、Caller 層的 schema 驗證。
+GLM-5.3-Flash 在 Mac Studio M3 Ultra 上速度不算慢（prefill ~253 tok/s），但格式遵循不穩定：量化模型常出現 JSON fence、trailing text、空回、裸陣列、程式碼截斷。只靠模型本身不夠，實務上需要 Jinja 層的輸出紀律、Proxy 層的 JSON 提取 + 重試、Caller 層的 schema 驗證。
 
 我把踩破的坑全部整理出來，做成一個資料庫，方便 AI 查詢。出事的時候查一下：這個問題我們是不是遇過？開工之前先讀一下：有哪些東西可能會影響？
 
@@ -89,7 +89,7 @@ OpenCode / harness / curl
 
 - 語意錯（EXT-012/015）：Jinja 無法解決，需 caller 驗證 + 重試或更強模型。
 - 程式碼截斷（EXT-048）：需 caller 重試 + 固定 seed；grader 用 Python 而非 JS（大整數精度）。
-- Speed suite：GLM prefill 極快（0.4s for 32K-64K），128K/200K 因 prefill 太慢未測。
+- Speed suite：GLM prefill 不算慢（0.4s for 32K-64K），128K/200K 因 prefill 太慢未測。
 - Splash（ANE prefill）：已安裝，需在 oMLX App UI 手動啟用。
 
 ## 授權
