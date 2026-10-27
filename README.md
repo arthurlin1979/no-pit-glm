@@ -24,6 +24,7 @@ GLM-5.3-Flash 在 Mac Studio M3 Ultra 上速度不算慢（prefill ~253 tok/s）
 - [30 秒 Quick Start](QUICKSTART.md)：人用三步確認、AI 用三頁開工。
 - [常見問題](TROUBLESHOOTING.md)：從 183 筆濃縮的先看入口，完整脈絡連回原編號。
 - [完整紀錄索引](catalogue/INDEX.md)：逐條保留主紀錄與維修／延伸項的原編號。
+- [實測速度](catalogue/speed.md)：110 題生成速度 + Speed suite 32K/64K 實測。
 - [避坑速查表](PITFALLS.md)：快速查閱主題，只作入口，不取代完整紀錄。
 - [Jinja 變更區塊說明](BLOCKS.md)：本專案對 chat template 的所有修改，含實證狀態。
 - [來源與版本](SOURCES.md)：來源、版本、證據邊界與致謝。

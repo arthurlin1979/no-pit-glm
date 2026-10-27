@@ -24,6 +24,7 @@ Benchmark journey (114 questions): Ability 62/100 → 100/100 (theoretical, with
 - [30-second Quick Start](QUICKSTART.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 - [Full record index](catalogue/INDEX.md)
+- [Measured speed](catalogue/speed.md)
 - [Pitfalls quick reference](PITFALLS.md)
 - [Jinja change blocks](BLOCKS.md)
 - [Sources & versions](SOURCES.md)
