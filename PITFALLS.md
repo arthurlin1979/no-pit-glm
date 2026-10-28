@@ -56,6 +56,7 @@ GLM 主題編號與 benchmark 題目編號是兩套導航，不能把主題數�
 | GLM-022 | 程式碼截斷；本專案 | max_tokens 不夠 | EXT-048 截斷發生在 ~1362 chars（遠低於 8192），屬模型提前停止。 |
 | GLM-023 | 常識題；本專案 | 模型能力不足 | T07/T08 需 prompt 加「只回一句短句」或更強模型。 |
 | GLM-024 | Grammar-constrained；社群 | 期待 oMLX 支援 grammar | oMLX 尚未支援 `--grammar`；切換 llama.cpp 會失去 Mac 優化。 |
+| GLM-025 | 重試上限與失敗處理；本專案 | 無限重試或自動降級換模型 | 兩層都有上限：Proxy `MAX_RETRIES=3`（只救格式錯），Caller `MAX_RETRIES=5`（驗證錯，每次換 seed）。用盡即回 500 / raise RuntimeError 停下等人，不自動降級。格式錯可自動救，語意錯連續失敗代表任務有問題，自動重試沒意義。 |
 
 ## 使用這份表的限制
 
